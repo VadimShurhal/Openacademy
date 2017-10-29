@@ -8,6 +8,15 @@
         -->
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Courses</field>
+            <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                            <page string="About">
+                                This is an example of notebooks
+                            </page>
+            </notebook>
+
             <field name="res_model">openacademy.course</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
